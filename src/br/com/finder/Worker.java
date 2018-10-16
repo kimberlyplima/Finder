@@ -1,7 +1,7 @@
 /*
  *
  */
-package br.com.dijkstra;
+package br.com.finder;
 
 /**
  *
