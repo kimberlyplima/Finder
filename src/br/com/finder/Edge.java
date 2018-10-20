@@ -12,10 +12,12 @@ package br.com.finder;
 public class Edge {
     private Worker source;
     private Worker destination;
+    private int weight;
     
     public Edge(Worker source, Worker destination){
         this.source = source;
         this.destination = destination;
+        this.weight = 100;
     }
 
     /**
