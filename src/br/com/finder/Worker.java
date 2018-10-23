@@ -9,6 +9,7 @@ package br.com.finder;
  */
 public class Worker {
     private int id;
+    private int cost;
     private String name;
     private String[] location;
     private String occupation;
@@ -16,6 +17,7 @@ public class Worker {
     
     public Worker(int id, String[] data){
         this.id = id;
+        this.cost = 100;        
         this.name = data[0];
         this.location = data[1].split(",");
         this.occupation = data[2];
@@ -40,14 +42,14 @@ public class Worker {
      * @return the location
      */
     public String[] getcoordinates() {
-        return location;
+        return getLocation();
     }
 
     /**
      * @param coordinates the location to set
      */
     public void setcoordinates(String[] coordinates) {
-        this.location = coordinates;
+        this.setLocation(coordinates);
     }
 
     /**
@@ -90,5 +92,33 @@ public class Worker {
      */
     public void setId(int id) {
         this.id = id;
+    }
+
+    /**
+     * @return the location
+     */
+    public String[] getLocation() {
+        return location;
+    }
+
+    /**
+     * @param location the location to set
+     */
+    public void setLocation(String[] location) {
+        this.location = location;
+    }
+
+    /**
+     * @return the cost
+     */
+    public int getCost() {
+        return cost;
+    }
+
+    /**
+     * @param cost the cost to set
+     */
+    public void setCost(int cost) {
+        this.cost = cost;
     }
 }
