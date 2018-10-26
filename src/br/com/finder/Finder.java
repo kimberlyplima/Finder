@@ -7,17 +7,10 @@
  */
 package br.com.finder;
 
-import java.util.*;
-
 /**
  *
  * @author kimberlyplima
  */
-public class Main {
-    public static void main(String[] args) {
-        Graph graph = new Graph();
-        graph.buildGraph();
-        graph.showGraph();
-        
-    }
+public class Finder {
+    
 }

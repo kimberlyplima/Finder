@@ -1,7 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Classname		(nome da classe)
+ * Version information	(versionamento)
+ * Date                 (data e hora)
+ * Author               (autor)
+ * Copyright notice     (descrição detalhada da classe e métodos)
  */
 package br.com.finder;
 
@@ -9,15 +11,17 @@ package br.com.finder;
  *
  * @author kimberlyplima
  */
-public class Edge {
+public class Relations {
     private Worker source;
     private Worker destination;
-    private int weight;
+    private double distance;
     
-    public Edge(Worker source, Worker destination){
+    public Relations(Worker source, Worker destination){
+        ConvertCoordinates cc = new ConvertCoordinates(source.getcoordinates(), 
+                destination.getcoordinates());
+        this.distance = cc.getDistance();
         this.source = source;
         this.destination = destination;
-        this.weight = 100;
     }
 
     /**

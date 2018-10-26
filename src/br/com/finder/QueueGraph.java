@@ -1,6 +1,9 @@
 /*
- * This is a simple implementation of a queue structure using Queue interface
- * and linkedlists.
+ * Classname		(nome da classe)
+ * Version information	(versionamento)
+ * Date                 (data e hora)
+ * Author               (autor)
+ * Copyright notice     (descrição detalhada da classe e métodos)
  */
 package br.com.finder;
 

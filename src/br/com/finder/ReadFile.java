@@ -1,7 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Classname		(nome da classe)
+ * Version information	(versionamento)
+ * Date                 (data e hora)
+ * Author               (autor)
+ * Copyright notice     (descrição detalhada da classe e métodos)
  */
 package br.com.finder;
 
