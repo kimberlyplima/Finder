@@ -14,11 +14,11 @@ import java.util.*;
  * @author kimberlyplima
  */
 public class Graph {
-    ReadFile rd = new ReadFile();
-    List<String[]> data = rd.readFile();
-    List<Worker> vertices = new LinkedList();
-    List<Relations> edges = new LinkedList();
-    int workerId = 0;
+    private ReadFile rd = new ReadFile();
+    private List<String[]> data = rd.readFile();
+    private List<Worker> vertices = new LinkedList();
+    private List<Relations> edges = new LinkedList();
+    private int workerId = 0;
     
     public void buildGraph(){
         for(String[] worker : data){
@@ -58,7 +58,15 @@ public class Graph {
         return vertices;
     }
     
-    public List<Relations> getRelations(){
-        return edges;
+    public List<Worker> getRelations(Worker father){
+        List<Worker> relations = new LinkedList();
+        
+        for(Relations i : edges){
+            if(i.getSource().equals(father)){
+                relations.add(i.getDestination());
+            }
+        }
+        
+        return relations;
     }
 }
