@@ -11,7 +11,7 @@ package br.com.finder;
  *
  * @author kimberlyplima
  */
-public class Worker {
+public class Worker implements Comparable<Worker>{
     private int id;
     private int cost;
     private String name;
@@ -124,5 +124,18 @@ public class Worker {
      */
     public void setCost(int cost) {
         this.cost = cost;
+    }
+    
+    public boolean workerEquals(Worker other){
+        return this.getCost() == other.getCost();
+    }
+    
+    @Override
+    public int compareTo(Worker other){
+        if(this.workerEquals(other)){
+            return 0;
+        } else if(getCost() > other.getCost()){
+            return 1;
+        } else return -1;
     }
 }
