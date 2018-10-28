@@ -51,6 +51,20 @@ public class Relations {
     public void setDestination(Worker destination) {
         this.destination = destination;
     }
+
+    /**
+     * @return the distance
+     */
+    public double getDistance() {
+        return distance;
+    }
+
+    /**
+     * @param distance the distance to set
+     */
+    public void setDistance(double distance) {
+        this.distance = distance;
+    }
     
     
 }
