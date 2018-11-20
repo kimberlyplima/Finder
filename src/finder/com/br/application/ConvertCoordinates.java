@@ -2,7 +2,7 @@
  * Classname            ConvertCoordinates
  * Version information  x.x.xx
  * Date                 24/10/2018 20:20
- * Author               Kimberly P. Lima
+ * Author               Kimberly P. Lima && Laercio Santos
  * Copyright notice     Esta classe implementa a conversão de coordenadas 
  *                      geográficas decimais para Km, usando a fórmula de 
  *                      Harvesine.

@@ -1,7 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Classname		Vertex
+ * Version information	x.x.xx
+ * Date                 20/11/2018 21:11
+ * Author               Kimberly P. Lima && Laercio Santos
+ * Copyright notice     
  */
 package finder.com.br.application;
 
@@ -27,7 +29,7 @@ public class Vertex implements Comparable<Vertex> {
         this.name = data[0];
         this.location = data[1].split(",");
         this.occupation = data[2];
-        this.available = Boolean.getBoolean(data[3]);
+        this.available = Boolean.parseBoolean(data[3]);
         this.edges = new ArrayList<>();
         this.minDistance = Double.MAX_VALUE;
     }

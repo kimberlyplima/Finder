@@ -1,7 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Classname		Dijkstra
+ * Version information	x.x.xx
+ * Date                 20/11/2018 21:11
+ * Author               Kimberly P. Lima && Laercio Santos
+ * Copyright notice     
  */
 package finder.com.br.application;
 
@@ -9,10 +11,7 @@ package finder.com.br.application;
  *
  * @author kimberlyplima
  */
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class Dijkstra {
     public void computePath(Vertex sourceVertex) {
@@ -25,12 +24,11 @@ public class Dijkstra {
 
             for (Edge edge : vertex.getEdges()) {
                 Vertex v = edge.getDestination();
-//                Vertex u = edge.getStartVertex();
                 double weight = edge.getWeight();
                 double minDistance = vertex.getMinDistance() + weight;
 
                 if (minDistance < v.getMinDistance()) {
-                    //priorityQueue.remove(vertex);
+                    priorityQueue.remove(vertex);
                     v.setPreviosVertex(vertex);
                     v.setMinDistance(minDistance);
                     priorityQueue.add(v);
@@ -38,7 +36,23 @@ public class Dijkstra {
             }
         }
     }
-
+    
+    public List<Vertex> getShortestPath(List<Vertex> targets){
+        List<Vertex> path = new LinkedList();
+        
+        for(Vertex v : targets){
+            for (Vertex vertex = v; vertex != null; vertex = vertex.getPreviosVertex()) {
+            path.add(vertex);
+            }
+            
+            Dijkstra d = new Dijkstra();
+            d.computePath(v);
+        }
+        
+        Collections.reverse(path);
+        return path;
+    }
+    
     public List<Vertex> getShortestPathTo(Vertex targetVertex) {
         List<Vertex> path = new ArrayList<>();
 

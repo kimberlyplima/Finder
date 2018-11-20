@@ -1,7 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Classname		Graph
+ * Version information	x.x.xx
+ * Date                 20/11/2018 21:11
+ * Author               Kimberly P. Lima && Laercio Santos
+ * Copyright notice     
  */
 package finder.com.br.application;
 
