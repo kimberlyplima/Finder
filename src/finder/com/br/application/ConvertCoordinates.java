@@ -7,7 +7,7 @@
  *                      geográficas decimais para Km, usando a fórmula de 
  *                      Harvesine.
  */
-package br.com.finder;
+package finder.com.br.application;
 
 /**
  *

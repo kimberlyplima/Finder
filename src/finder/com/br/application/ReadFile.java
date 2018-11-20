@@ -1,11 +1,14 @@
 /*
- * Classname		(nome da classe)
- * Version information	(versionamento)
- * Date                 (data e hora)
- * Author               (autor)
- * Copyright notice     (descrição detalhada da classe e métodos)
+ * Classname		ReadFile
+ * Version information	x.x.xx
+ * Date                 17/11/2018 13:03
+ * Author               Kimberly P. Lima
+ * Copyright notice     Esta classe implementa o método readFile, responsável
+ *                      ler o conteúdo do arquivo "dados.txt" e atribuí-lo a
+ *                      uma lista de conteúdo, que será utilizada mais tarde
+ *                      para a criação dos workers (profissionais).
  */
-package br.com.finder;
+package finder.com.br.application;
 
 import java.io.*;
 import java.util.*;

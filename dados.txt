@@ -1,3 +1,4 @@
+Consumidor;-15.836073,-47.912019;Estudante;False
 Pergentino;-15.867068,-47.761822;Programador;True
 Heráclio;-7.378871,-37.189213;Programador;False
 Pedrinaldino;-7.196807,-37.926007;Pistoleiro;True
